@@ -20,7 +20,7 @@ function App() {
       <FormPage />
       <Router>
       <Switch>
-      <Route path="/register" component={Register}  />
+      <Route path="/register" exact component={Register}  />
         <Route path="/nav" component={Nav} />
         <Route path="/products" component={Products} />
 

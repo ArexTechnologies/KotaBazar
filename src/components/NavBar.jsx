@@ -12,7 +12,9 @@ return (
     <Navbar    bg="primary" variant="dark">
     <Navbar.Brand href="#home">KotaBazar</Navbar.Brand>
     <Nav className="mr-auto">
-    <NavDropdown title="Subscription" id="basic-nav-dropdown">
+        <NavDropdown title="Subscription" id="basic-nav-dropdown">
+          
+          
         <NavDropdown.Item href="#action/1.1">All subscription</NavDropdown.Item>
         <NavDropdown.Item href="#action/1.2">My subcirption</NavDropdown.Item>
         <NavDropdown.Item href="#action/1.3">Something</NavDropdown.Item>
