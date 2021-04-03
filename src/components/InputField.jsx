@@ -1,53 +1,50 @@
-import React from 'react';
+import React, {useState} from 'react';
 import{Form, Button} from 'react-bootstrap'
+// import { Redirect } from 'react-router';
+ import Register from "./Register"
  
-const daButton = props => {
-    const handleClick = () => {
-      if (props.onClick) {
-        props.onClick(props.value);
-      }
-    }
-    
-  }
 
 
 function InputField(props){
+ 
+  const [isAuth, setIsAuth] = useState(false);
+   
+  const clickHandle = () => {
     
-    
-  
-
-return (
-<div>
-
-
-<div className="logincard">
+    return setIsAuth(true);
+     
+    }
+  if (isAuth === false) {
+    return (
+      <div>
+        <div className="logincard">
           <div className="centralise">
             <Form>
               <Form.Group controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
                 <Form.Control type="email" placeholder="Enter email" />
-                <Form.Text className="text-muted">
-                  We'll never share your email with anyone else.
-                </Form.Text>
+                
               </Form.Group>
               <Form.Group controlId="formBasicPassword">
                 <Form.Label>Password</Form.Label>
                 <Form.Control type="password" placeholder="Password" />
+                
               </Form.Group>
               <div className="allignC">
                 <Button variant="primary" type="submit">
                   Submit
                 </Button>
                 <br />
-                or
-                <br />
+                <p>or sign up</p>
+
                 <div>
-                  <Button 
-                   onClick={handleClick}  
+                  <Button
+                    onClick={clickHandle}
                     // href="/register"
+                    value={isAuth}
                     variant="primary"
                   >
-                    Social MEdia 
+                    Sign up
                   </Button>
                   {/* <nav className="nav-links">
                   <Link to="/Register"  >Sign in with google</Link> 
@@ -58,17 +55,14 @@ return (
             </Form>
           </div>
         </div>
-
-
-
-</div>
-
-
-
-)
-
-
+      </div>
+    );
+  } else {
+    return <div><Register/>x</div>;
+  }
+ 
+  
+  
 }
-const handleClick = value => () => console.log(value)
 
 export default InputField;

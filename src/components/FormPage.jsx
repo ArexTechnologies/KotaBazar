@@ -23,22 +23,14 @@ import InputField from "./InputField";
 
 function FormPage() {
   
-  if (InputField.handleClick  === true) {
-    return (
-      <div >
+
+   return (  <div >
       <NavBar />
-      <Register />
+      <InputField />
     </div>
-    );
-  } else   {
-    return (
-      
-      <div>
-        <NavBar />
-        <InputField />
-      </div>
-    );
-  }
+   )
+     
+ 
 }
 
 export default FormPage;
