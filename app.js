@@ -14,7 +14,7 @@ app.use('/api/v1/tasks', tasks)
 const start = async () => {
   
     try {
-        await connectDB(process.env.MONGO_URI);
+        await connectDB(mongodb+srv://arun:1234@cluster0.ubrme.mongodb.net/taskManager?retryWrites=true&w=majority);
         app.listen(8885, () => {
           console.log("server started");
         }); 
