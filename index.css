@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+    display: flex;
+}
+.icon {
+        display: block;
+          
+            height: auto;
+           
+   width: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.iconDiv{
+width: 100%;
+justify-content: center;
+justify-items: center;
+
+align-items: center;
+}
