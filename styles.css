@@ -1,0 +1,184 @@
+
+body{
+    padding-top:4rem;
+}
+.searchIcon{
+    align-items: flex-end;
+}
+
+a{
+    display: block;
+        position: relative;
+        padding: 0.2em 0;
+    font-size: 3rem;
+}
+a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: gainsboro;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+
+a:hover::after,
+a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+}
+.sectionIntroIn {
+text-align: left;
+    display:inline-block;
+    justify-content:center;
+    margin-top: 70px;
+    margin-left: 2rem;
+   
+}
+.introSection{
+ /* margin-top:2rem; */
+        display: relative;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+}
+
+.customContainer{
+margin:0px;
+width:15rem;
+background-color:red;
+}
+
+.companies{
+    background-color: gainsboro;
+    /* width:100%; */
+    /* flex: 0 0 auto; */
+    margin: 0px;
+    margin-top:4rem;
+        display: relative;
+        /* float: left; */
+        width: 100%;
+        height:auto;
+}
+
+
+
+#whatCanWeDo{
+text-align: left;
+    display: relative;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 10rem;
+    text-align: center;
+   
+}
+
+.worldMap{
+text-align: left;
+    display: relative;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.worldDetails {
+    text-align: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        margin-top: 5rem;
+        text-align: center;
+}
+.carousel {
+    margin-bottom: 4rem;
+}
+
+
+.carousel-caption {
+    margin-bottom: 15rem;
+    bottom: 3rem;
+    z-index: 10;
+}
+
+
+.carousel-item {
+    height: 32rem;
+    background-color: #777;
+}
+
+.carousel-item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+.carousel-control-next,
+.carousel-control-prev
+
+/*, .carousel-indicators */
+    {
+    filter: invert(100%);
+}
+
+.ImgImg {
+    transition: transform .2s;
+}
+.ImgImg:hover{
+transform: scale(1.1);
+}
+
+.WeSupport{
+    
+    display:relative;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    
+}
+
+.BulmaImg{
+display: inline;
+    float: center;
+    background-color: white;
+    width: 382px;
+    height: 201px;
+    margin-left: 0.75rem;
+}
+@media screen and (max-width: 992px) {
+    .companies {
+        background-color: gainsboro;
+        /* width:100%; */
+        /* flex: 0 0 auto; */
+        margin: 0px;
+        margin-top: 4rem;
+        display: block;
+        /* float: left; */
+        width: 100%;
+        height: auto;
+    }
+
+        #firstImage {
+            margin-left: 2rem;
+        }
+}
+
+@media screen and (max-width: 720px) {
+.BulmaImg {
+        display: inline;
+        float: center;
+        background-color: white;
+        width: 382px;
+        height: 201px;
+        margin-left: 0.75rem;
+        margin-top: 2rem;
+    }
+}
